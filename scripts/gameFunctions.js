@@ -11,8 +11,16 @@
  * result in true.
  */
 function validateGameType(gameTypeString) {
-
-}
+	if gameTypeString.toLowerCase() === "1" || "one" {
+		return "1"
+		console.log("1");
+		} else if gameTypeString.toLowerCase() === "2" || "two" {
+			return "2"
+			console.log("2");
+			} else {
+				return "false";
+				}
+};
 
 /*
  * Returns the players name if it is a valid name. Valid names must only contain
@@ -20,14 +28,24 @@ function validateGameType(gameTypeString) {
  * false if the name is not valid.
  */
 function validateName(name) {
+	var characters = [A-Za-z0-9_\-]
+	for (var i = 0; i < array.length, i++) {
+		if (name[i] === characters) {
+			return i;
+		} else {
+			return "false"
+			console.log("false");
+		}
 
-}
+	};
 
 /*
  * Randomly generates and returns a name for a computer player.
  */
 function generateComputerName() {
-
+	var playerName = ["Waffer", "Lilly", "Rugrat", "Sand", "Fuzzy", "Kitty", "Puppy", "Snuggles", "Rubber", "Stinky", "Lulu", "Lala", "Sparkle", "Glitter","Silver", "Golden", "Rainbow", "Cloud", "Rain", "Stormy", "Wink", "Sugar", "Twinkle", "Star", "Halo", "Angel"];
+	var randomName = parseInt (Math.random() * playerName.length);
+	console.log(randomName);
 }
 
 /*
@@ -38,7 +56,7 @@ function generateComputerName() {
  * insensitive, so it should accept both 'Y' and 'y' for example.
  */
 function validateYesNo(yesNoString) {
-
+	
 }
 
 /*
